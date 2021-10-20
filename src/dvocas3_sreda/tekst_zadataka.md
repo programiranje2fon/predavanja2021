@@ -29,6 +29,7 @@ Prikazati rad ovih metoda pozivanjem iz **main** metode
 
 
 # Dodatne napomene
+- debugger: breakpoint, step over, step into, debug/Java perspective, variables window
 - jar fajlovi
 - javadoc
 - java source
