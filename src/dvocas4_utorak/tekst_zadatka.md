@@ -47,6 +47,9 @@ U klasi **TestIspitneOcene** pozvati ove nove metode i proveriti njihov rad.
 
 
 **Problem**: da li postoji mogućnost da se ubrza svaki od ovih algoritama, i nekako optimizuje rad klase? Ovde može veoma lako jer se elementi niza unose od početka niza i nema izbacivanja.
+
+
+Napraviti kopiju klase IspitneOcene sa nazivom **IspitneOcene2** i uvesti u nju sledeće izmene:
 - Uvesti atribut **brojac** koji pamti koliko je ocena zaista uneto u niz (ne koliki je kapacitet). Ovaj atribut ima početnu vrednost 0, a uvećava se posle svakog unosa. 
 - Promeniti kod svih metoda tako da rade koristeći atribut brojac.
 
