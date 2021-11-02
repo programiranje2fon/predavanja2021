@@ -8,9 +8,9 @@ Napraviti klasu **Osoba** u paketu **dvocas5_utorak.zadatak1** koja ima:
 - atribut **adresa** koji predstavlja adresu stanovanja osobe u formatu "ULICA;BROJ;GRAD" (npr. "Jove Ilica;154;Beograd").
 
 
-- metodu **postaviIme** koja kao parametar dobija novu vrednost za ime osobe i postavlja atribut ime na tu vrednost samo ako je uneto ime različito od null i nije prazan String. Ako uneta vrednost nije u redu, samo se ispisuje poruka o gre[ci na ekranu. **(null vrednost, prazan String, razlike između ta dva, isEmpty + length metode, metoda trim)**
+- metodu **postaviIme** koja kao parametar dobija novu vrednost za ime osobe i postavlja atribut ime na tu vrednost samo ako je uneto ime različito od null i nije prazan String. Ako uneta vrednost nije u redu, samo se ispisuje poruka o grešci na ekranu. **(null vrednost, prazan String, razlike između ta dva, isEmpty + length metode, metoda trim)**
 
-- metodu **postaviPrezime** koja kao parametar dobija novu vrednost za prezime osobe i postavlja atribut prezime na tu vrednost samo ako je uneto ime različito od null i nije prazan String. Ako uneta vrednost nije u redu, samo se ispisuje poruka o gre[ci na ekranu. 
+- metodu **postaviPrezime** koja kao parametar dobija novu vrednost za prezime osobe i postavlja atribut prezime na tu vrednost samo ako je uneto ime različito od null i nije prazan String. Ako uneta vrednost nije u redu, samo se ispisuje poruka o grešci na ekranu. 
 
 - metodu **postaviAdresu** koja kao parametar dobija novu vrednost za adresu osobe i postavlja vrednost atributa adresa na tu vrednost, samo ako je različita od null, dužine je 5 znakova ili više i sadrži dva znaka ';' na različitim pozicijama. Ako uneta vrednost nije u redu, samo se ispisuje poruka o grešci na ekranu. **(indeksi znakova u String-u, dve varijante metode: charAt() i indexOf, lastIndexOf)**
 
@@ -36,8 +36,8 @@ Napraviti klasu **FilmskaPremijera** u paketu **dvocas5_utorak.zadatak2** koja i
 - atribut **datumPremijereAmerika** koji predstavlja datum premijere filma u Americi. Početna vrednost za ovaj atribut je trenutni datum i vreme. **(predstavljanje datuma u Javi, GregorianCalendar klasa - [dokumentacija](https://docs.oracle.com/javase/8/docs/api/java/util/GregorianCalendar.html), import, klasa Date i novije klase za predstavljanje vremena, početna vrednost datuma pri inicijalizaciji)**
 - atribut **datumPremijereSvet** koji predstavlja datum premijere filma u ostatku sveta. Početna vrednost za ovaj atribut je 21.3.2022.**(inicijalizacija datuma na konkretne vrednosti)**
 
-
-- metodu **postaviDatumePremijera** koja ima dva parametra: datum premijere u Americi i datum premijere u ostatku sveta. Ova metoda postavlja unete vrednosti u odgovarajuće atribute, ali samo ako su oba datuma različita od null, i ako se odnose na vremenske trenutke u budućnosti. Ako to nije slučaj, ispisati samo pruku greške.**(before i after metode)**
+- metodu **postaviNaziv** koja kao parametar dobija novu vrednost za naziv filma i postavlja atribut nazivFilma na tu vrednost samo ako je uneti naziv različit od null i nije prazan String. Ako uneta vrednost nije u redu, samo se ispisuje poruka o grešci na ekranu.
+- metodu **postaviDatumePremijera** koja ima dva parametra: datum premijere u Americi i datum premijere u ostatku sveta. Ova metoda postavlja unete vrednosti u odgovarajuće atribute, ali samo ako su oba datuma različita od null, i ako se odnose na vremenske trenutke u budućnosti. Ako to nije slučaj, ispisati samo poruku greške.**(before i after metode)**
 - metodu **ispisi** koja na ekranu ispisuje sve podatke o filmskoj premijeri.**(malo lepši ispis datuma, pojedinačno uzimanje polja)**
 - metodu **pomeriPremijere** koja pomera premijere za godinu dana unapred.
 
