@@ -3,7 +3,7 @@
 Napraviti klasu **Osoba** u paketu **dvocas5_utorak.zadatak1** koja ima:
 
 
-- atribut **ime** koji predstavlja ime osobe. Početna vrednost je "nepoznato".**(Klasa String, razlika u odnosu na char[], inicijalizacija String-a, String vrednosti " " i char vrednosti ' ')**
+- atribut **ime** koji predstavlja ime osobe. Početna vrednost je "nepoznato".**(Klasa String - [dokumentacija](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html), razlika u odnosu na char[], inicijalizacija String-a, String vrednosti " " i char vrednosti ' ', dokumentacija: )**
 - atribut **prezime** koji predstavlja prezime osobe. Početna vrednost je "nepoznato".
 - atribut **adresa** koji predstavlja adresu stanovanja osobe u formatu "ULICA;BROJ;GRAD" (npr. "Jove Ilica;154;Beograd").
 
@@ -21,6 +21,10 @@ Napraviti klasu **Osoba** u paketu **dvocas5_utorak.zadatak1** koja ima:
 
 Napraviti klasu **TestOsoba** u paketu **dvocas5_utorak.zadatak1** koja ima main metodu i u kojoj se testiraju atributi i metode klase Osoba. Napraviti objekat klase Osoba: Pera Perić, Jove Ilića 154, Beograd.Ispisati na ekranu sve podatke iz objekta i proveriti da li je adresa Vojislava Ilića 154, Beograd, ista adresi te osobe.
 
+**Problem**: niz znakova u klasi String je nepromenljiv ("immutable"). Kada se unosi nova vrednost, pravi se novi String. Uvode se dve klase koje rešavaju taj problem u slučaju da je potrebno:
+- StringBuffer - u redu je za višenitni rad ("thread-safe"), ali je sporija. [dokumentacija](https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html)
+- StringBuilder - nije ok za višenitni rad, ali je brža. [dokumentacija](https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html)
+
 
 # Zadatak 2
 
@@ -29,7 +33,7 @@ Napraviti klasu **FilmskaPremijera** u paketu **dvocas5_utorak.zadatak2** koja i
 
 
 - atribut **nazivFilma**.
-- atribut **datumPremijereAmerika** koji predstavlja datum premijere filma u Americi. Početna vrednost za ovaj atribut je trenutni datum i vreme. **(predstavljanje datuma u Javi, GregorianCalendar klasa, import, klasa Date i novije klase za predstavljanje vremena, početna vrednost datuma pri inicijalizaciji)**
+- atribut **datumPremijereAmerika** koji predstavlja datum premijere filma u Americi. Početna vrednost za ovaj atribut je trenutni datum i vreme. **(predstavljanje datuma u Javi, GregorianCalendar klasa - [dokumentacija](https://docs.oracle.com/javase/8/docs/api/java/util/GregorianCalendar.html), import, klasa Date i novije klase za predstavljanje vremena, početna vrednost datuma pri inicijalizaciji)**
 - atribut **datumPremijereSvet** koji predstavlja datum premijere filma u ostatku sveta. Početna vrednost za ovaj atribut je 21.3.2022.**(inicijalizacija datuma na konkretne vrednosti)**
 
 
