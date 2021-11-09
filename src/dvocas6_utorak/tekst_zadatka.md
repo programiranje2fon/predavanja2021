@@ -68,7 +68,7 @@ Izmeniti kod klase **Student** tako da se:
 
 - napiše nova javna metoda **ispisi** koja ispisuje sve podatke o studentu, uključujući i fakultet i prosek. **(redefinisanje metoda, polimorfizam, rezervisana reč super)**
 
-U klasi **TestOsoba** ponovo pokrenuti ispis oba objekta na ekranu.**(objasniti razliku)**
+U klasi **TestOsoba** ponovo pokrenuti ispis oba objekta na ekranu.**(objasniti razliku, objasniti kompatibilnost klasa i class cast)**
 
 
 **Problem**: da li postoji neki standardizovaniji način da se vrše neke uobičajene operacije nad objektima, kao što je ispis na ekranu. A šta ako treba uporediti dva objekta ili npr. klonirati objekte.**(klasa Object, metode toString, equals i clone)**
@@ -76,7 +76,7 @@ U klasi **TestOsoba** ponovo pokrenuti ispis oba objekta na ekranu.**(objasniti 
 Izmeniti klase **Osoba** i **Student** tako da se umesto metode ispisi, koriste metode toString. Izmeniti i kod u klasi **TestOsoba** tako da se koriste toString metode.
 
 
-Uvesti u klase **Osoba** i **Student** metode equals za poređenje dva objekta po jednakosti. Izmeniti i kod u klasi **TestOsoba** tako da se koriste toString metode.
+Uvesti u klase **Osoba** i **Student** metode equals za poređenje dva objekta po jednakosti. Dodati kod u klasu **TestOsoba** tako da se koristi equals metoda.
 
 
 
