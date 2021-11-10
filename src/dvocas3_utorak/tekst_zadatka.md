@@ -25,7 +25,7 @@ Napraviti klasu **TestMenjacnica** u paketu **dvocas3_utorak.zadatak1** koja ima
 
 
 
-- **Objasniti zašto camel case i Java naming conventions (https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html) - koji se problem time rešava?**
+- **Objasniti zašto camel case i [Java naming conventions](https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html) - koji se problem time rešava?**
 - **Objasniti Eclipse autocompletion, i kako izlazi dokumentacija kada se iskuca.**
 - **Pokazati dokumentaciju klase java.lang.Math na Oracle sajtu i u Eclipse editoru. Pokušati sa Math.random() u metodi zameniZaDinare**
 - **Objasniti i Eclipse perspektive i kako se perspektiva resetuje, premeštaju i otvaraju/zatvaraju podprozori, pokazati Window - Show view iz glavnog menija.**
