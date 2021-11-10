@@ -7,18 +7,18 @@ import dvocas3_sreda.zadatak1.NacinPlacanja;
 public class Racun3 {
 		
 	
-	private int brojRacuna;
-	private String[] nazivArtikla;
-	private double[] jedinicnaCena;
-	private int[] kolicina;
-	NacinPlacanja nacinPlacanja;
-	GregorianCalendar datumRacuna;
+	protected int brojRacuna;
+	protected String[] nazivArtikla;
+	protected double[] jedinicnaCena;
+	protected int[] kolicina;
+	protected NacinPlacanja nacinPlacanja;
+	protected GregorianCalendar datumRacuna;
 	
-	int brojArtikala = 0;
+	protected int brojArtikala = 0;
 	
 	static int brojacRacuna=0;
 	
-	Racun3(int brojArtikala) {
+	public Racun3(int brojArtikala) {
 		brojacRacuna= brojacRacuna+1;
 		brojRacuna = brojacRacuna;
 		
@@ -31,7 +31,7 @@ public class Racun3 {
 		nacinPlacanja = NacinPlacanja.GOTOVINA;		
 	}
 	
-	void dodajArtikal(String naziv, double jedCena, int kol) {
+	public void dodajArtikal(String naziv, double jedCena, int kol) {
 		nazivArtikla[brojArtikala] = naziv;
 		jedinicnaCena[brojArtikala] = jedCena;
 		kolicina[brojArtikala] = kol;
@@ -39,7 +39,7 @@ public class Racun3 {
 	}
 	
 	
-	double izracunajUkupanIznos() {
+	protected double izracunajUkupanIznos() {
 		double iznos = 0; // jedinicnaCena1 * kolicina1 + jedinicnaCena2 * kolicina2 + jedinicnaCena3 * kolicina3;
 		for(int i=0; i<nazivArtikla.length; i++) {
 			iznos = iznos + jedinicnaCena[i] * kolicina[i];
@@ -47,11 +47,11 @@ public class Racun3 {
 		return iznos;
 	}
 	
-	double izracunajKusur(double uplacenIznos) {
+	public double izracunajKusur(double uplacenIznos) {
 		return uplacenIznos - izracunajUkupanIznos();
 	}
 	
-	double izracunajProsecnuCenuArtikla() {
+	protected double izracunajProsecnuCenuArtikla() {
 		double prosCena =  0 ; // (jedinicnaCena1 + jedinicnaCena2 + jedinicnaCena3) / 3.0;
 		
 		for(int i=0; i< jedinicnaCena.length; i++) {
@@ -61,12 +61,12 @@ public class Racun3 {
 		return prosCena / jedinicnaCena.length;
 	}
 	
-	double izracunajUkupanPorez() {
+	protected double izracunajUkupanPorez() {
 		double porez = izracunajUkupanIznos() / 1.2;
 		return porez;
 	}
 	
-	boolean daLiJeBesplatnaIsporuka() {
+	public boolean daLiJeBesplatnaIsporuka() {
 		double iznos = izracunajUkupanIznos();
 		
 		if (iznos > 3000) {
@@ -78,7 +78,7 @@ public class Racun3 {
 		// return iznos>3000;
 	}
 	
-	boolean nagradnaIgra() {
+	public boolean nagradnaIgra() {
 		double slucajanBroj = Math.random();
 		if (slucajanBroj >0.5) return true;
 
