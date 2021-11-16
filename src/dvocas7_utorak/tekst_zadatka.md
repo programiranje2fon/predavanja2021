@@ -45,7 +45,7 @@ Dodati u klasu IspitniSpisak:
 
 - javnu metodu **daLiPostoji** koja kao parametar dobija objekat klase Student i proverava da li se u nizu **studenti** već nalazi isti taj student. Ako se nalazi, metoda vraća true, a inače false. Obratiti pažnju na prazna mesta u nizu.**(korišćenje equals metode za poređenje dva objekta, preduslov je da se redefiniše)**
 
-- javnu metodu **unesiStudenta** koja kao parametar prima objekat klase Student i unosi ga u niz **studenti** na prvo slobodno mesto u nizu (vrednost elementa niza na to mestu je null) samo ako u nizu NE POSTOJI isti taj student. Ako u nizu nema slobodnih mesta ili je već uneta ocena, ispisuje se poruka o grešci na ekranu.
+- javnu metodu **unesiStudenta** koja kao parametar prima objekat klase Student i unosi ga u niz **studenti** na prvo slobodno mesto u nizu (vrednost elementa niza na to mestu je null) samo ako u nizu NE POSTOJI isti taj student. Ako u nizu nema slobodnih mesta ili je već unetisti student, ispisuje se poruka o grešci na ekranu.
 
 
 U main metodi klase **TestIspitniSpisak** u već napravljeni objekat IspitniSpisak uneti studente: Pera Perić 0084/2020 8, Mika Mikić 1019/2020 10, Žika Žikić 0332/2020 6. Pozvati ponovo metodu ispisi.
@@ -53,7 +53,7 @@ U main metodi klase **TestIspitniSpisak** u već napravljeni objekat IspitniSpis
 
 Dodati u klasu **IspitniSpisak**:
 
-- metodu **izracunajProsek** koja izračunava i vraća prosečnu ocenu na ispitu. Ne uzimati u razmatranje prazne elemente niza i studente sa ocenom 5.
+- metodu **izracunajProsek** koja izračunava i vraća prosečnu ocenu na ispitu. Ne uzimati u razmatranje prazne elemente niza (imaju vrednost null) i studente sa ocenom 5.
 
 - metodu **pronadjiNajvisuOcenu** koja pretražuje niz **studenti** i na ekranu ispisuje najvišu ocenu na ispitu. Ne uzimati u razmatranje prazne elemente niza (imaju vrednost null).
 
