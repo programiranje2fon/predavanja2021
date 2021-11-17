@@ -1,6 +1,6 @@
 # Zadatak 1
 
-Napraviti klasu koja modelira **Artikal** koji je opisan atributima {šifra, naziv, cena i količina} u skladu sa Java Beans standardom
+Napraviti klasu koja modelira **Artikal** koji je opisan atributima {šifra, naziv, opis, jedinicna cena i količina} u skladu sa Java Beans standardom
 (privatni atributi, geteri i seteri, konstruktor bez parametara).
 Redefinisati  metode equals i toString.
 
