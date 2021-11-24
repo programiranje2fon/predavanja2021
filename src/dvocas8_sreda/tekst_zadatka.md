@@ -1,8 +1,6 @@
 # Zadatak 1 - Primer za apstraktne klase
 
-Napraviti javnu klasu **MotornoVozilo** u paketu **dvocas8_sreda.zadatak1** koja ima:
-
-- privatni atribut **markaModel** koji predstavlja marku i model vozila (npr. "Ford Focus").
+Napraviti javnu klasu **MotornoVozilo** u paketu **dvocas8_sreda.zadatak1** koja ima:- privatni atribut **markaModel** koji predstavlja marku i model vozila (npr. "Ford Focus").
 - privatni atribut **registarskaOznaka** koji predstavlja registarsku oznaku i broj vozila (npr. "BG234RD").
 - privatni atribut **kubikaza** koji predstavlja kolika je radna zapremina motora tog vozila (npr. 1398).
 - privatni atribut **snaga** koji predstavlja snagu motora tog vozila u kilovatima (npr. 51).
