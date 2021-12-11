@@ -84,4 +84,11 @@ Napraviti javnu klasu **BesplatniMesovitiAutomat** u paketu **dvocas8_sreda.zada
 
 Napraviti javnu klasu **TestAutomat** u paketu **dvocas8_sreda.zadatak2.test** u čijoj main metodi se kreiraju objekti prethodnih klasa i testiraju njihove metode.**(ne može se napraviti instanca interfejsa)**
 
+## Rezime
+- interfejsi su kao apstraktne klase koje imaju sve metode apstraktne
+- klase koje implementiraju interfejs moraju da implementiraju sve metode koje se nalaze u interfejsu
+- svaka klasa može da implementira više interfejsa (a može da nasledi samo jednu klasu)
+- interfejsi ne mogu da sadrže atribute / stanje
+
+
 
