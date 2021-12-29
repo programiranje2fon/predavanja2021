@@ -12,6 +12,7 @@ public class Racun5 {
 	
 	protected int brojRacuna;
 	private List<Artikal> stavkeRacuna;
+	private boolean nagradnaIgra = false;
 	
 	protected NacinPlacanja nacinPlacanja;
 	protected GregorianCalendar datumRacuna;
@@ -73,6 +74,26 @@ public class Racun5 {
 	}		
 	
 	
+	
+	
+	public NacinPlacanja getNacinPlacanja() {
+		return nacinPlacanja;
+	}
+
+	public void setNacinPlacanja(NacinPlacanja nacinPlacanja) {
+		this.nacinPlacanja = nacinPlacanja;
+	}
+	
+	
+
+	public boolean isNagradnaIgra() {
+		return nagradnaIgra;
+	}
+
+	public void setNagradnaIgra(boolean nagradnaIgra) {
+		this.nagradnaIgra = nagradnaIgra;
+	}
+
 	protected double izracunajUkupanIznos() {
 		double ukupanIznos = 0; // jedinicnaCena1 * kolicina1 + jedinicnaCena2 * kolicina2 + jedinicnaCena3 * kolicina3;
 		for(int i=0; i<stavkeRacuna.size(); i++) {
@@ -118,9 +139,9 @@ public class Racun5 {
 	
 	public boolean nagradnaIgra() {
 		double slucajanBroj = Math.random();
-		if (slucajanBroj >0.5) return true;
+		if (slucajanBroj >0.5) nagradnaIgra = true;
 
-		return false;
+		return nagradnaIgra;
 	}
 	
 	
@@ -189,7 +210,7 @@ public class Racun5 {
 			sb.append("Nije besplatna isporuka").append(System.lineSeparator());
 		}
 		
-		if (nagradnaIgra()) {
+		if (nagradnaIgra) {
 			sb.append("Cestitamo dobili ste nagradu!").append(System.lineSeparator());
 		}		
 
